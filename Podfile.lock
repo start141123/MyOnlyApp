@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.5.1)
+  - GDPerformanceView-Swift (1.2.0)
+  - Hero (1.0.0)
+  - Kommander (0.9.2)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - TangramKit (1.1.2)
+  - XCGLogger (6.0.1):
+    - XCGLogger/Core (= 6.0.1)
+  - XCGLogger/Core (6.0.1):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Alamofire
+  - GDPerformanceView-Swift
+  - Hero
+  - Kommander
+  - TangramKit (~> 1.1.2)
+  - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  GDPerformanceView-Swift: 5f12f13dcdca4cb87f91ef91ba6b50981421c57f
+  Hero: 18e7cf8af41c04c8532d1430ac174004a9365c87
+  Kommander: 4f8f4459a3297ab8cdfbcc38060eb5e9b7763def
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  TangramKit: ca32030acd9ab68c6e12ba731f6862ad63804780
+  XCGLogger: b4ca980580108cfeaf221afe158f5d89c1be22e0
+
+PODFILE CHECKSUM: 60dcd3a2d0611ad0e5259184b91f83c56777ec97
+
+COCOAPODS: 1.4.0.beta.2

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yGo-zo-lKM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="hEs-Du-78C">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="yGo-zo-lKM" customClass="HHMenuViewController" customModule="MyOnly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1e-Gh-ELs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mR8-iU-GHT">
+                                <rect key="frame" x="20" y="80" width="335" height="527"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5oW-x9-1A2">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="527"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW6-JN-9Dp">
+                                                <rect key="frame" x="30" y="0.0" width="97.5" height="117"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_audiotrack_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="ltz-V1-ZYX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgo-Z2-g41">
+                                                <rect key="frame" x="30" y="137" width="97.5" height="116.5"/>
+                                                <color key="backgroundColor" red="0.019607843140000001" green="0.49019607840000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_chat_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="jhv-e4-Acu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVt-Xr-sy1">
+                                                <rect key="frame" x="30" y="273.5" width="97.5" height="117"/>
+                                                <color key="backgroundColor" red="1" green="0.058823529409999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_format_quote_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="loc-W0-btP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skK-Y9-cuD">
+                                                <rect key="frame" x="30" y="410.5" width="97.5" height="116.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_insert_photo_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="2Sn-xj-Jfa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pgo-Z2-g41" firstAttribute="leading" secondItem="5oW-x9-1A2" secondAttribute="leading" constant="30" id="3pi-U2-jpN"/>
+                                            <constraint firstItem="DVt-Xr-sy1" firstAttribute="leading" secondItem="5oW-x9-1A2" secondAttribute="leading" constant="30" id="5F7-a3-dbg"/>
+                                            <constraint firstAttribute="trailing" secondItem="pgo-Z2-g41" secondAttribute="trailing" constant="30" id="GhV-5z-73F"/>
+                                            <constraint firstItem="aW6-JN-9Dp" firstAttribute="top" secondItem="5oW-x9-1A2" secondAttribute="top" id="POO-pg-1Qw"/>
+                                            <constraint firstAttribute="trailing" secondItem="skK-Y9-cuD" secondAttribute="trailing" constant="30" id="gTU-YX-wLo"/>
+                                            <constraint firstItem="aW6-JN-9Dp" firstAttribute="leading" secondItem="5oW-x9-1A2" secondAttribute="leading" constant="30" id="jmC-oy-Hy5"/>
+                                            <constraint firstAttribute="trailing" secondItem="aW6-JN-9Dp" secondAttribute="trailing" constant="30" id="k8i-E4-TMX"/>
+                                            <constraint firstAttribute="trailing" secondItem="DVt-Xr-sy1" secondAttribute="trailing" constant="30" id="yFy-wr-nLc"/>
+                                            <constraint firstItem="skK-Y9-cuD" firstAttribute="leading" secondItem="5oW-x9-1A2" secondAttribute="leading" constant="30" id="yYc-NK-LnY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-lR-6H1">
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="527"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-As-mIg">
+                                                <rect key="frame" x="30" y="0.0" width="97.5" height="117"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_link_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="JqW-Db-AHK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6B-tq-54r">
+                                                <rect key="frame" x="30" y="137" width="97.5" height="116.5"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_text_fields_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="jgE-VK-ccS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwG-dA-GUc">
+                                                <rect key="frame" x="30" y="273.5" width="97.5" height="117"/>
+                                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_videocam_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="source(menu)"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="JRz-vr-ivd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-T0-kvg">
+                                                <rect key="frame" x="30" y="410.5" width="97.5" height="116.5"/>
+                                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ic_gif_48pt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="menu"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="Rof-OB-C4O" kind="show" id="Zce-wj-YIb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="HwG-dA-GUc" secondAttribute="trailing" constant="30" id="6Y7-pQ-HBt"/>
+                                            <constraint firstAttribute="trailing" secondItem="RNF-As-mIg" secondAttribute="trailing" constant="30" id="6sH-0z-XXI"/>
+                                            <constraint firstItem="NGn-T0-kvg" firstAttribute="leading" secondItem="2vl-lR-6H1" secondAttribute="leading" constant="30" id="D7m-xF-cUn"/>
+                                            <constraint firstAttribute="trailing" secondItem="NGn-T0-kvg" secondAttribute="trailing" constant="30" id="JnR-U2-Wad"/>
+                                            <constraint firstItem="HwG-dA-GUc" firstAttribute="leading" secondItem="2vl-lR-6H1" secondAttribute="leading" constant="30" id="Vik-yR-qhL"/>
+                                            <constraint firstItem="RNF-As-mIg" firstAttribute="leading" secondItem="2vl-lR-6H1" secondAttribute="leading" constant="30" id="i4f-rd-fDJ"/>
+                                            <constraint firstItem="l6B-tq-54r" firstAttribute="leading" secondItem="2vl-lR-6H1" secondAttribute="leading" constant="30" id="yNd-Fl-n56"/>
+                                            <constraint firstAttribute="trailing" secondItem="l6B-tq-54r" secondAttribute="trailing" constant="30" id="yak-j1-CQc"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5oW-x9-1A2" secondAttribute="bottom" id="9QX-uq-e1b"/>
+                                    <constraint firstAttribute="bottom" secondItem="2vl-lR-6H1" secondAttribute="bottom" id="Oc4-st-JJr"/>
+                                    <constraint firstItem="2vl-lR-6H1" firstAttribute="top" secondItem="mR8-iU-GHT" secondAttribute="top" id="bml-bS-wq1"/>
+                                    <constraint firstItem="5oW-x9-1A2" firstAttribute="top" secondItem="mR8-iU-GHT" secondAttribute="top" id="drL-d6-271"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAY-tD-UVN">
+                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Xc-ba-Was"/>
+                                    <constraint firstAttribute="width" constant="30" id="4Zb-Fr-uG6"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="hero_unwindToRootViewController" destination="R0M-go-NpQ" eventType="touchUpInside" id="shC-kx-axV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jAY-tD-UVN" firstAttribute="leading" secondItem="iH3-2K-brc" secondAttribute="leading" constant="20" id="J2u-5h-7VV"/>
+                            <constraint firstItem="iH3-2K-brc" firstAttribute="bottom" secondItem="mR8-iU-GHT" secondAttribute="bottom" constant="60" id="Tpf-7J-A81"/>
+                            <constraint firstItem="mR8-iU-GHT" firstAttribute="leading" secondItem="iH3-2K-brc" secondAttribute="leading" constant="20" id="amx-5k-CQW"/>
+                            <constraint firstItem="mR8-iU-GHT" firstAttribute="top" secondItem="iH3-2K-brc" secondAttribute="top" constant="60" id="gDO-fB-F2f"/>
+                            <constraint firstItem="iH3-2K-brc" firstAttribute="trailing" secondItem="mR8-iU-GHT" secondAttribute="trailing" constant="20" id="msW-0M-D1C"/>
+                            <constraint firstItem="jAY-tD-UVN" firstAttribute="top" secondItem="T1e-Gh-ELs" secondAttribute="top" constant="20" id="p01-5r-xsM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iH3-2K-brc"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0M-go-NpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="125"/>
+        </scene>
+        <!--Menu Page View Controller-->
+        <scene sceneID="rxw-Lu-ER7">
+            <objects>
+                <viewController id="Rof-OB-C4O" customClass="MenuPageViewController" customModule="MyOnly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Zu-ZT-gpe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-3I-uyA">
+                                <rect key="frame" x="137.5" y="283" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.49019607840000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2oX-yh-496"/>
+                                    <constraint firstAttribute="width" constant="100" id="vdx-6v-EsR"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v2g-3I-uyA" firstAttribute="centerY" secondItem="2Zu-ZT-gpe" secondAttribute="centerY" id="NJd-Dh-dfr"/>
+                            <constraint firstItem="v2g-3I-uyA" firstAttribute="centerX" secondItem="2Zu-ZT-gpe" secondAttribute="centerX" id="msn-S6-6m3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eAp-tu-SW7"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="centerBtn" destination="v2g-3I-uyA" id="HWk-Cx-3uj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNu-GZ-mSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="126"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_audiotrack_48pt" width="48" height="48"/>
+        <image name="ic_chat_48pt" width="48" height="48"/>
+        <image name="ic_format_quote_48pt" width="48" height="48"/>
+        <image name="ic_gif_48pt" width="48" height="48"/>
+        <image name="ic_insert_photo_48pt" width="48" height="48"/>
+        <image name="ic_link_48pt" width="48" height="48"/>
+        <image name="ic_text_fields_48pt" width="48" height="48"/>
+        <image name="ic_videocam_48pt" width="48" height="48"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JqW-Db-AHK"/>
+    </inferredMetricsTieBreakers>
+</document>
