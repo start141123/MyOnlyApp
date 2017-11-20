@@ -14,7 +14,8 @@ class HHFirstRootTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.randomColor
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

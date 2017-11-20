@@ -107,16 +107,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         self.window? = UIWindow.init(frame: UIScreen.main.bounds)
         let tabbarvc = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController() as! UITabBarController
         tabbarvc.delegate = self
+        tabbarvc.hidesBottomBarWhenPushed = true
         self.window?.rootViewController = UINavigationController.init(rootViewController: tabbarvc)
         self.window?.makeKeyAndVisible()
         
         #if DEBUG
-            GDPerformanceMonitor.sharedInstance.startMonitoring()
-            GDPerformanceMonitor.sharedInstance.configure(configuration: { (textLabel) in
-                textLabel?.backgroundColor = .black
-                textLabel?.textColor = .white
-                textLabel?.layer.borderColor = UIColor.black.cgColor
-            })
+            
+            let overlayClass: AnyClass = NSClassFromString("UIDebuggingInformationOverlay")!
+            overlayClass.performSelector(onMainThread: NSSelectorFromString("prepareDebuggingOverlay"), with: (Any).self, waitUntilDone: true)
+            
+//            GDPerformanceMonitor.sharedInstance.startMonitoring()
+//            GDPerformanceMonitor.sharedInstance.configure(configuration: { (textLabel) in
+//                textLabel?.backgroundColor = .black
+//                textLabel?.textColor = .white
+//                textLabel?.layer.borderColor = UIColor.black.cgColor
+//            })
         #endif
         
         return true

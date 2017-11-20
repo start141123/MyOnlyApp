@@ -19,13 +19,19 @@ class HHFirstRootViewController: UIViewController {
         super.viewDidLoad()
         initAll()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 }
 
 extension HHFirstRootViewController {
     
     func initAll() {
-        self.navigationController?.navigationBar.backgroundColor = UIColor.black
-        self.rootTabvc.backgroundColor = UIColor.randomColor
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: "china"), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.topItem?.title = "Just"
+        
         self.rootTabvc.tableFooterView = UIView()
         self.rootTabvc.delegate = self
         self.rootTabvc.dataSource = self

@@ -34,6 +34,8 @@
 		043FEB631FAAE91E00580484 /* TTViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043FEB621FAAE91E00580484 /* TTViewController.storyboard */; };
 		043FEB681FAB209D00580484 /* HHMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FEB671FAB209D00580484 /* HHMenuViewController.swift */; };
 		043FEB6A1FAB20A700580484 /* HHMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043FEB691FAB20A700580484 /* HHMenuViewController.storyboard */; };
+		0457FFDF1FAC5CCB00D579A0 /* HHBuiltInTransitionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457FFDE1FAC5CCB00D579A0 /* HHBuiltInTransitionTableViewController.swift */; };
+		0457FFE11FAC5CDF00D579A0 /* HHBuiltInTransitionTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0457FFE01FAC5CDF00D579A0 /* HHBuiltInTransitionTableViewController.storyboard */; };
 		E3F84ACDE4291F5989CC6429 /* Pods_MyOnly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7030ECDBD8D543E350D91244 /* Pods_MyOnly.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		043FEB621FAAE91E00580484 /* TTViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TTViewController.storyboard; sourceTree = "<group>"; };
 		043FEB671FAB209D00580484 /* HHMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHMenuViewController.swift; sourceTree = "<group>"; };
 		043FEB691FAB20A700580484 /* HHMenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HHMenuViewController.storyboard; sourceTree = "<group>"; };
+		0457FFDE1FAC5CCB00D579A0 /* HHBuiltInTransitionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBuiltInTransitionTableViewController.swift; sourceTree = "<group>"; };
+		0457FFE01FAC5CDF00D579A0 /* HHBuiltInTransitionTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HHBuiltInTransitionTableViewController.storyboard; sourceTree = "<group>"; };
 		1651470C830A4DB3CA19DA10 /* Pods-MyOnly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOnly.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyOnly/Pods-MyOnly.release.xcconfig"; sourceTree = "<group>"; };
 		696EF53E0F279C6F969513E1 /* Pods-MyOnly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyOnly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyOnly/Pods-MyOnly.debug.xcconfig"; sourceTree = "<group>"; };
 		7030ECDBD8D543E350D91244 /* Pods_MyOnly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyOnly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,6 +380,7 @@
 		043FEB641FAB1D2C00580484 /* Hero(页面跳转动画) */ = {
 			isa = PBXGroup;
 			children = (
+				0457FFDD1FAC5CAE00D579A0 /* BuiltInTransition */,
 				0424A5291FAC0D4600509A00 /* HeroRoot */,
 				043FEB661FAB1FC600580484 /* Menu */,
 				043FEB651FAB1D5700580484 /* Basic */,
@@ -399,6 +404,15 @@
 				043FEB691FAB20A700580484 /* HHMenuViewController.storyboard */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		0457FFDD1FAC5CAE00D579A0 /* BuiltInTransition */ = {
+			isa = PBXGroup;
+			children = (
+				0457FFDE1FAC5CCB00D579A0 /* HHBuiltInTransitionTableViewController.swift */,
+				0457FFE01FAC5CDF00D579A0 /* HHBuiltInTransitionTableViewController.storyboard */,
+			);
+			path = BuiltInTransition;
 			sourceTree = "<group>";
 		};
 		DCD4FC4710BFDD3C16E3469A /* Frameworks */ = {
@@ -521,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043FEB391FAABD0400580484 /* LaunchScreen.storyboard in Resources */,
+				0457FFE11FAC5CDF00D579A0 /* HHBuiltInTransitionTableViewController.storyboard in Resources */,
 				043FEB631FAAE91E00580484 /* TTViewController.storyboard in Resources */,
 				043FEB361FAABD0400580484 /* Assets.xcassets in Resources */,
 				043FEB311FAABD0400580484 /* Main.storyboard in Resources */,
@@ -630,6 +645,7 @@
 				041DFB201FAB3ED0009C6069 /* RAMFrameItemAnimation.swift in Sources */,
 				0424A5201FABFD7800509A00 /* HHFirstRootTableViewCell.swift in Sources */,
 				0424A52B1FAC0D5E00509A00 /* HHHeroRootViewController.swift in Sources */,
+				0457FFDF1FAC5CCB00D579A0 /* HHBuiltInTransitionTableViewController.swift in Sources */,
 				041DFB211FAB3ED0009C6069 /* RAMFumeAnimation.swift in Sources */,
 				043FEB2C1FAABD0400580484 /* AppDelegate.swift in Sources */,
 				041DFB221FAB3ED0009C6069 /* RAMRotationAnimation.swift in Sources */,

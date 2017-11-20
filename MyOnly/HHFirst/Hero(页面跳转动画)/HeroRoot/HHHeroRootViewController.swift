@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Hero
 
 class HHHeroRootViewController: UIViewController {
 
     var heroRootvc: UITableView! = nil
     
-    var storyboards: [String] =  ["TTViewController", "HHMenuViewController"]
+    var storyboards: [String] =  ["TTViewController",
+                                  "HHMenuViewController",
+                                  "HHBuiltInTransitionTableViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
